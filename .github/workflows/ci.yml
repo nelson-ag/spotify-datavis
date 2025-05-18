@@ -1,0 +1,32 @@
+name: spotify-data-viz-ci
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  notify-ag-nel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send email notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ vars.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: New push to main branch
+          body: |
+            A new push was made to the main branch of spotify-data-viz repository.
+            
+            Commit details:
+            - Author: ${{ github.actor }}
+            - Message: ${{ github.event.head_commit.message }}
+            - Time: ${{ github.event.head_commit.timestamp }}
+            - URL: ${{ github.event.head_commit.url }}
+            
+            Repository: ${{ github.repository }}
+          to: ${{ vars.NOTIFICATION_EMAIL }}
+          from: GitHub Actions

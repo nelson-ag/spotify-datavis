@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#logo-container, #category, #album:hover, #artist:hover, #track:hover {
+  background-color: #1DB954;
+}
+ #artist-rank {
+  color: #1DB954;
+}
+
+.category-selected{
+  background-color: #1DB954;  
+}
+

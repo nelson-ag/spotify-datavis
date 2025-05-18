@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Spotify Data Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body class="flex flex-col items-center min-h-screen bg-zinc-900 text-white font-sans">
+    <header class="flex items-center justify-center w-full h-24 z-10" id="logo-container" data-testid="header-logo">
+      <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_Black.png" alt="Spotify Logo" class="object-contain h-14" data-testid="spotify-logo">
+    </header>
+
+    <div id="floating-logo" class="hidden md:flex fixed top-10 left-6 z-50 transition-opacity duration-300 opacity-0" data-testid="floating-logo">
+      <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_Black.png" class="w-40 h-auto drop-shadow-lg" alt="Sticky Spotify Logo" data-testid="sticky-logo">
+    </div>
+
+    <section class="flex flex-col items-center text-center pt-12 px-4 w-full" data-testid="hero-section">
+      <h2 class="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight font-[Space Grotesk] max-w-4xl" data-testid="hero-title">
+        Visualising Spotify's Most Streamed Albums, Artists & Tracks in 2024
+      </h2>
+      <p class="text-lg md:text-xl text-neutral-300 max-w-2xl mt-6 font-[Roboto Mono]" data-testid="hero-subtitle">
+        An interactive D3.js visualization powered by the Spotify API
+      </p>
+    </section>
+
+    <section class="flex flex-col sm:flex-row items-center justify-center w-full px-4 mt-10 gap-4" data-testid="category-section">
+      <div class="text-white font-semibold text-sm px-6 py-3" id="category" data-testid="category-label">CATEGORY</div>
+      <ul class="flex flex-wrap justify-center gap-3" id="category-list" data-testid="category-list">
+        <li class="px-5 py-2 border border-white rounded-full cursor-pointer category-item" id="album" data-testid="album-category">ALBUM</li>
+        <li class="px-5 py-2 border border-white rounded-full cursor-pointer category-item" id="artist" data-testid="artist-category">ARTIST</li>
+      </ul>
+    </section>
+
+    <main class="flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl px-4 py-16 gap-10" data-testid="main-content">
+      <div id="chart-container" class="flex items-center justify-center w-full sm:max-w-[500px] h-[500px] bg-zinc-800 rounded-xl shadow-lg" data-testid="chart-container">
+        <svg id="bubble-chart" class="w-full h-full" data-testid="bubble-chart"></svg>
+      </div>
+
+      <div class="flex flex-col w-full sm:max-w-[500px] h-[500px] bg-zinc-800 rounded-xl shadow-lg overflow-hidden" data-testid="detail-container">
+        <div id="chart-detail-container" class="h-[250px] w-full overflow-hidden relative" data-testid="image-container">
+          <div id="image-skeleton" class="absolute inset-0 bg-zinc-700 animate-pulse"></div>
+          <img id="bubble-data-image-preview" 
+               src="" 
+               alt="Cover Image" 
+               class="absolute inset-0 object-cover w-full h-full transition-opacity duration-300 opacity-0" 
+               loading="lazy" 
+               data-testid="preview-image">
+        </div>
+
+        <div class="p-4" data-testid="title-container">
+          <a id="artist-name" href="" class="text-2xl md:text-3xl font-bold" data-testid="artist-name"></a>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 p-4" data-testid="stats-container">
+          <div class="flex-1 space-y-2" data-testid="streams-container">
+            <div>
+              <p id="artist-followers" class="text-lg font-bold" data-testid="artist-followers"></p>
+              <p class="text-sm text-neutral-400" data-testid="followers-label">Followers</p>
+            </div>
+            <div>
+              <p id="artist-total-streams" class="text-lg font-bold" data-testid="artist-total-streams"></p>
+              <p class="text-sm text-neutral-400" data-testid="streams-label">Total Streams</p>
+            </div>
+          </div>
+          <div class="flex-1 flex flex-col justify-center items-center" data-testid="rank-container">
+            <p id="artist-rank" class="text-5xl font-bold" data-testid="artist-rank"></p>
+            <p class="text-sm text-neutral-400" data-testid="rank-label">Rank</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-sm text-neutral-500 p-6" data-testid="footer">
+      <p data-testid="footer-text">Made with ❤️ using D3.js and the Spotify API. Github @nelsagbaje.</p>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
