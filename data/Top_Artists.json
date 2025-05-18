@@ -1,0 +1,122 @@
+[
+  {
+    "name":"Bad Bunny",
+    "totalStreams":37054834425,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eb744a4243fb6cc938011a98f4",
+    "rank":1
+  },
+  {
+    "name":"The Weeknd",
+    "totalStreams":36948540278,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eb9e528993a2820267b97f6aae",
+    "rank":2
+  },
+  {
+    "name":"Drake",
+    "totalStreams":34962157577,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
+    "rank":3
+  },
+  {
+    "name":"Taylor Swift",
+    "totalStreams":34470771165,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5ebe672b5f553298dcdccb0e676",
+    "rank":4
+  },
+  {
+    "name":"Post Malone",
+    "totalStreams":26137472958,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5ebe17c0aa1714a03d62b5ce4e0",
+    "rank":5
+  },
+  {
+    "name":"Ed Sheeran",
+    "totalStreams":24014900390,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eb399444ed4eace08b549d1161",
+    "rank":6
+  },
+  {
+    "name":"Ariana Grande",
+    "totalStreams":23464991696,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eb6725802588d7dc1aba076ca5",
+    "rank":7
+  },
+  {
+    "name":"MUSIC LAB JPN",
+    "totalStreams":22866685573,
+    "imageUrl":"https://i.scdn.co/image/ab67616d0000b273494a62494b78ea9eba3b0144",
+    "rank":8
+  },
+  {
+    "name":"Olivia Rodrigo",
+    "totalStreams":19729219749,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5ebe03a98785f3658f0b6461ec4",
+    "rank":9
+  },
+  {
+    "name":"Eminem",
+    "totalStreams":18878880174,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eba00b11c129b27a88fc72f36b",
+    "rank":10
+  },
+  {
+    "name":"Harry Styles",
+    "totalStreams":17353388340,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5ebf7db7c8ede90a019c54590bb",
+    "rank":11
+  },
+  {
+    "name":"Imagine Dragons",
+    "totalStreams":17157121647,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5ebab47d8dae2b24f5afe7f9d38",
+    "rank":12
+  },
+  {
+    "name":"XXXTENTACION",
+    "totalStreams":16923515048,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5ebf0c20db5ef6c6fbe5135d2e4",
+    "rank":13
+  },
+  {
+    "name":"Billie Eilish",
+    "totalStreams":16811833201,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eb4a21b4760d2ecb7b0dcdc8da",
+    "rank":14
+  },
+  {
+    "name":"Justin Bieber",
+    "totalStreams":16647801287,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eb8ae7f2aaa9817a704a87ea36",
+    "rank":15
+  },
+  {
+    "name":"Travis Scott",
+    "totalStreams":16460200849,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eb19c2790744c792d05570bb71",
+    "rank":16
+  },
+  {
+    "name":"Bruno Mars",
+    "totalStreams":16225111478,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5ebc36dd9eb55fb0db4911f25dd",
+    "rank":17
+  },
+  {
+    "name":"Maroon 5",
+    "totalStreams":16000309235,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
+    "rank":18
+  },
+  {
+    "name":"Doja Cat",
+    "totalStreams":15856288522,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5ebe94f88ff74ae4ddcab961f97",
+    "rank":19
+  },
+  {
+    "name":"Dua Lipa",
+    "totalStreams":15649310557,
+    "imageUrl":"https://i.scdn.co/image/ab6761610000e5eb0c68f6c95232e716f0abee8d",
+    "rank":20
+  }
+]
