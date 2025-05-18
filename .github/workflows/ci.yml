@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  notify:
+  notify-ag-nel:
     runs-on: ubuntu-latest
     steps:
       - name: Send email notification
@@ -15,7 +15,7 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{ secrets.MAIL_USERNAME }}
+          username: ${{ vars.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: New push to main branch
           body: |
@@ -28,6 +28,5 @@ jobs:
             - URL: ${{ github.event.head_commit.url }}
             
             Repository: ${{ github.repository }}
-          to: ${{ github.repository_owner }}
+          to: ${{ vars.NOTIFICATION_EMAIL }}
           from: GitHub Actions
-          content_type: text/html 
